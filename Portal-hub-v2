@@ -1764,3 +1764,132 @@ function OrionLib:Destroy()
 end
 
 return OrionLib
+
+local player = game.Players.LocalPlayer
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/cholatecoders/Portal-Hub-UI/main/Portal-hub-v2')))()
+
+local Window = OrionLib:MakeWindow({Name = "🌀Portal Hub V2🌀(ʜᴛᴛᴘs://ᴅɪsᴄᴏʀᴅ.ɢɢ/WEJQᴍᴅDᴍ)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+Name = "🌀Portal Hub V2🌀"
+HidePremium = false 
+SaveConfig = true 
+ConfigFolder = "portal" 
+IntroEnabled = "true"
+IntroText = "🌀Portal Hub V2🌀" 
+IntroIcon = "https://s4.ezgif.com/tmp/ezgif-4-e3e710b413.png"
+Icon = "https://s4.ezgif.com/tmp/ezgif-4-e3e710b413.png" 
+CloseCallback = nil 
+
+local Tab = Window:MakeTab({
+	Name = "tsbg",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "tsbg!",
+	Default = false,
+	Callback = function ()
+		getgenv().ToggleUI = "J"-- //  Key Toggle "J" set by default however you can change it.
+getgenv().ProjectNova = "https://raw.githubusercontent.com/Lvl9999/TheStrongestBattlegrounds/main/ProjectNovaV9";
+
+pcall(function()
+    loadstring(game:HttpGet(getgenv().ProjectNova))();
+end)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "tsbg anim!",
+	Default = false,
+	Callback = function ()
+        ```
+local changeAnim = function(OGAnim, NewAnim, NewAnimSpeed, NewAnimTPos)
+local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    
+    humanoid.AnimationPlayed:Connect(function(d)
+if d.Animation.AnimationId == "rbxassetid://"..tostring(OGAnim) then
+d:Stop()
+
+        local pchar= game.Players.LocalPlayer.Character
+        local AnimationId = tostring(NewAnim)
+        local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://"..AnimationId
+        local k = pchar:FindFirstChildOfClass('Humanoid'):LoadAnimation(Anim)
+        k:Play()
+if NewAnimSpeed then
+k:AdjustSpeed(NewAnimSpeed)
+end
+if NewAnimTPos then
+k.TimePosition = NewAnimTPos
+end
+       end
+end)
+end
+```
+	end    
+})
+
+Tab:AddToggle({
+	Name = "tsbg!",
+	Default = false,
+	Callback = function ()   --made by yuji itadori
+                 game.Players.LocalPlayer.PlayerGui.ScreenGui.MagicHealth.TextLabel.Text = “Portal awakening"
+                 game.Players.LocalPlayer.PlayerGui.ScreenGui.MagicHealth.Health.Bar.Bar.ImageColor3 = Color3.fromRGB(76, 40, 130  )
+	end    
+})
+
+
+
+
+
+local Tab = Window:MakeTab({
+	Name = "all games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+Tab:AddToggle({
+	Name = "inf yeild!",
+	Default = false,
+	Callback = function ()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "aotr",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddToggle({
+	Name = "attack on titan!",
+	Default = false,
+	Callback = function ()
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLevel/working-newbie/main/AOTR.lua"))()
+	end    
+})
+
+
+local Tab = Window:MakeTab({
+    Name = "Blade Ball",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+Tab:AddToggle({
+    Name = "auto parry",
+    Default = false,
+    Callback = function ()
+           loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652"))()
+    end    
+})
+
