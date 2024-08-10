@@ -5,7 +5,7 @@ local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
 
-local OrionLib = {
+local Portal-hub = {
 	Elements = {},
 	ThemeObjects = {},
 	Connections = {},
@@ -45,7 +45,7 @@ local function GetIcon(IconName)
 end   
 
 local Orion = Instance.new("ScreenGui")
-Orion.Name = "Orion"
+Orion.Name = "Portal Hub"
 if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
