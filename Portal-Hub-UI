@@ -5,7 +5,7 @@ local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
 local HttpService = game:GetService("HttpService")
 
-local Portal-hub = {
+local OrionLib = {
 	Elements = {},
 	ThemeObjects = {},
 	Connections = {},
